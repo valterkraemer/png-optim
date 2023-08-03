@@ -1,7 +1,17 @@
 {
 	"name": "png-optim",
-	"version": "0.0.1",
-	"private": true,
+	"version": "0.1.0",
+	"author": "Valter Kraemer",
+	"description": "Optimize PNGs in the browser",
+	"keywords": [
+		"Imagequant",
+		"image",
+		"optimization",
+		"Svelte",
+		"SvelteKit",
+		"Web Worker"
+	],
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -12,6 +22,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@panzoom/panzoom": "^4.5.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -19,13 +30,16 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
+		"imagequant": "^0.1.2",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
-		"vite": "^4.4.2"
+		"vite": "^4.4.2",
+		"vite-plugin-top-level-await": "^1.3.1",
+		"vite-plugin-wasm": "^3.2.2"
 	},
 	"type": "module"
 }
