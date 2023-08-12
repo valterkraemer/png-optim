@@ -4,8 +4,9 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-	plugins: [topLevelAwait(), wasm(), sveltekit()],
+	plugins: [wasm(), topLevelAwait(), sveltekit()],
 	worker: {
-		plugins: [topLevelAwait(), wasm()],
+		format: "es",
+		plugins: [wasm(), topLevelAwait()],
 	},
 });
